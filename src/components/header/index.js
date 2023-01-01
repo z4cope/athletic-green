@@ -9,7 +9,9 @@ import {
   SaleNotice,
   PulsingCircle,
   NavCart,
+  ProductsCount,
   Notifictions,
+  NotifictionsNotice,
   ProfileWrapper,
   ProfileImage,
   GreetingWrapper,
@@ -35,8 +37,12 @@ const Header = () => {
           {' '}
           <PulsingCircle /> Summer Sales
         </SaleNotice>
-        <NavCart>Cart</NavCart>
-        <Notifictions>Notes</Notifictions>
+        <NavCart background="./assets/shopping-bag.png">
+          <ProductsCount>2</ProductsCount>
+        </NavCart>
+        <Notifictions background="./assets/notifications.png">
+          <NotifictionsNotice />
+        </Notifictions>
         <ProfileWrapper>
           <ProfileImage background="./assets/avatar.jpeg" />
           <GreetingWrapper>
